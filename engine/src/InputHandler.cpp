@@ -1,4 +1,4 @@
-#include "../include/InputHandler.hpp"
+#include "../include/InputHandler.h"
 #include <stdexcept>
 #include <cctype>
 

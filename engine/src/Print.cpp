@@ -1,4 +1,4 @@
-#include "../include/Print.hpp"
+#include "../include/Print.h"
 #include <iostream>
 
 Print::Print() {}

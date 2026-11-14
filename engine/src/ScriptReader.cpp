@@ -2,7 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
-#include "../include/ScriptReader.hpp"
+#include "../include/ScriptReader.h"
 
 ScriptReader::ScriptReader() {}
 
