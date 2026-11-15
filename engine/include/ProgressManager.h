@@ -1,9 +1,11 @@
 #pragma once
 #include <string_view>
+#include <string>
 #include <cstddef>
 #include <ScriptReader.h>
 
 using string_view = std::string_view;
+using string = std::string;
 using size_t = std::size_t;
 
 enum ACT {
@@ -14,14 +16,14 @@ enum ACT {
 
 class StorySchema {
     private:
-        string_view act1_file_path;
-        string_view act2_file_path;
-        string_view act3_file_path;
+        string act1_file_path;
+        string act2_file_path;
+        string act3_file_path;
     
     public:
         StorySchema();
-        StorySchema(string_view file_path);
-        void CreateStorySchema();
+        void SetStorySchema();
+        void CreateStorySchema(string_view act1_file_path, string_view act2_file_path, string_view act3_filepath);
 };
 
 class ProgressManager {
