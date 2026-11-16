@@ -30,11 +30,11 @@ class ProgressManager {
     private:
         ACT current_act;
         size_t last_read_position;
-        ScriptReader script_reader;
+        StorySchema story_schema;
 
     public:
         ProgressManager();
-        ProgressManager(ACT current_act, size_t last_read_position, ScriptReader scrip_reader);
+        ProgressManager(ACT current_act, size_t last_read_position);
         void SetAct(ACT current_act);
         void SetLastReadPosition(size_t last_read_position);
 };

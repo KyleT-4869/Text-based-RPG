@@ -47,3 +47,19 @@ void StorySchema::CreateStorySchema(string_view act1_file_path, string_view act2
     file << act3_file_path << "\n";
 }
 
+
+ProgressManager::ProgressManager() {}
+
+ProgressManager::ProgressManager(ACT current_act, size_t last_read_position) {
+    this->current_act = current_act;
+    this->last_read_position = last_read_position;
+    this->story_schema.SetStorySchema();
+}
+
+void ProgressManager::SetAct(ACT current_act) {
+    this->current_act = current_act;
+}
+
+void ProgressManager::SetLastReadPosition(size_t last_read_position) {
+    this->last_read_position = last_read_position;
+}
